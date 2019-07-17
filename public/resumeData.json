@@ -1,0 +1,209 @@
+{
+  "main": {
+    "name": "James Christian",
+    "occupation": "All In One Developer",
+    "description": "Technology enthusiast, working with ReactJS and Spring Boot/Cloud(JAVA) with full end to end continous integration environment. Making full effort as team player by syncing knowledge. Because I think any project is team work",
+    "image": "profilepic.png",
+    "bio": "Like to learn anything that I interest in. Mostly working with ReactJs and Spring Boot along with Golang stack. Can do end-to-end continous-integration with GIT, Jenkins, Docker on VPS cloud as of this app.",
+    "contactmessage": "If you think, I can help in any way just drop a message below.",
+    "email": "jamescrstn@gmail.com",
+    "phone": "+91-7878350796",
+    "address": {
+      "street": "C.T.M.",
+      "city": "Ahmedabad",
+      "state": "Gujarat",
+      "zip": "380026"
+    },
+    "website": "https://resume.totalo.in",
+    "resumedownload": "https://resume.totalo.in/download",
+    "mediumRssToJsonUrl": "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@jameschristian.totalo",
+    "social": [
+      {
+        "name": "facebook",
+        "url": "http://facebook.com/jamescrstn",
+        "className": "fa fa-facebook"
+      },
+      {
+        "name": "twitter",
+        "url": "http://twitter.com",
+        "className": "fa fa-twitter"
+      },
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/jamescrstn",
+        "className": "fa fa-linkedin"
+      },
+      {
+        "name": "instagram",
+        "url": "http://instagram.com/jamescrstn",
+        "className": "fa fa-instagram"
+      },
+      {
+        "name": "medium",
+        "url": "https://medium.com/@jameschristian.totalo",
+        "className": "fa fa-medium"
+      },
+      {
+        "name": "github",
+        "url": "https://github.com/james-gc",
+        "className": "fa fa-github"
+      },
+      {
+        "name": "skype",
+        "url": "http://skype.com",
+        "className": "fa fa-skype"
+      }
+    ]
+  },
+  "resume": {
+    "education": [
+      {
+        "school": "Xavier Institute Of Computer Applications, Ahmedabad",
+        "degree": "Bachelor of Computer Applications",
+        "graduated": "March 2012",
+        "description": "Learned programming languages such as C,C++,DOT.NET, and Java with HTML&CSS. Completed final year project with 72%"
+      },
+      {
+        "school": "Government M.C.A. College, Maninagar, Ahmedabad",
+        "degree": "Master of Computer Applications",
+        "graduated": "March 2015",
+        "description": "Mastered in the programming lanugages much deeper, completed all the semsters with practical projects in C,C++,Java and PHP also. Passed with 8.72% CGPA"
+      }
+    ],
+    "work": [
+      {
+        "company": "SterliteTech, Ahmedabad",
+        "title": "Jr. BSS Developer",
+        "years": "March 2015 - Jan 2017",
+        "description": "Developing and Maintaining Telecom BSS Modules with JAVA-EE along with ZKOSS"
+      },
+      {
+        "company": "EclinicalWorks, Ahmedabad",
+        "title": "Product Developer",
+        "years": "Feb 2017 - May 2017",
+        "description": "Created product feature with Spring MVC and Hibernate"
+      },
+      {
+        "company": "Freelancer",
+        "title": "Ninja Developer",
+        "years": "May 2017 - Feb 2018",
+        "description": "Developed Raffle-System for cosmomarketing.co.in and other. Learned docker with end to end continuous integration design. Developed Totalo.In infrastructure. So I can create apps much faster rate."
+      },
+      {
+        "company": "Greycell Labs, Ahmedabad",
+        "title": "Sr. Fullstack Developer",
+        "years": "March 2018 - Present",
+        "description": "Developing features for product on end-client, Using ReactJS,FabricJs,and QuillJs, Spring Cloud and Jenkins, Github with end-to-end development."
+      }
+    ],
+    "skillmessage": "Here are the technologies that I have worked with",
+    "skills": [
+      {
+        "name": "Git",
+        "level": "75%"
+      },
+      {
+        "name": "Jira",
+        "level": "60%"
+      },
+      {
+        "name": "JAVA",
+        "level": "80%"
+      },
+      {
+        "name": "Spring Boot and Spring Cloud Ecosystem",
+        "level": "80%"
+      },
+      {
+        "name": "Golang",
+        "level": "50%"
+      },
+      {
+        "name": "ReactJs",
+        "level": "85%"
+      },
+      {
+        "name": "FabricJS",
+        "level": "90%"
+      },
+      {
+        "name": "QuillJS",
+        "level": "90%"
+      },
+      {
+        "name": "CSS",
+        "level": "70%"
+      },
+      {
+        "name": "HTML5",
+        "level": "90%"
+      },
+      {
+        "name": "VueJs",
+        "level": "60%"
+      },
+      {
+        "name": "MongoDB",
+        "level": "70%"
+      },
+      {
+        "name": "MYSQL",
+        "level": "70%"
+      },
+      {
+        "name": "Jenkins with Pipeline",
+        "level": "80%"
+      },
+      {
+        "name": "GITHUB",
+        "level": "80%"
+      },
+      {
+        "name": "VSCODE",
+        "level": "80%"
+      },
+      {
+        "name": "LINUX (MANJARO Desktop,UBUNTU Desktop, DEBIAN Server)",
+        "level": "80%"
+      },
+      {
+        "name": "Docker and Docker-swarm with Docker Registry",
+        "level": "90%"
+      },
+      {
+        "name": "NGINX",
+        "level": "70%"
+      }
+    ]
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "title": "Raffle System",
+        "category": "A Local Raffle System to generate result and make receipt from payments.",
+        "image": "canadian-wanderlusts.jpg",
+        "url": "http://cosmomarketing.co.in"
+      },
+      {
+        "title": "Resume Website",
+        "category": "Data based Resume website",
+        "image": "resume.totalo.in.s.png",
+        "url": "https://resume.totalo.in"
+      },
+      {
+        "title": "React JsonSchema Form",
+        "category": "Json Schema based Form generation with react-md components",
+        "image": "flow.totalo.ml.s.png",
+        "url": "https://flow.totalo.ml"
+      }
+    ]
+  },
+  "testimonials": {
+    "testimonials": [
+      {
+        "text": "Great team player with problem solving approach.",
+        "user": "Everyone"
+      }
+    ]
+  }
+}

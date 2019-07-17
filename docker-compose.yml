@@ -1,0 +1,35 @@
+version: '3.3'
+
+services:
+  resume:
+    image: "${REPOSITORY_IMAGE_NAME}"
+    # environment:
+    #   - NODE_ENV=production
+    networks:
+      - traefik-net
+    logging:
+      driver: json-file
+    deploy:
+      labels:
+        traefik.enable: "true"
+        traefik.frontend.rule: Host:resume.totalo.in
+        traefik.port: 3000
+        traefik.docker.network: traefik-net
+      replicas: 1
+      update_config:
+        parallelism: 2
+        delay: 10s
+      resources:
+        limits:
+          memory: 400M
+        reservations:
+          memory: 80M
+      restart_policy:
+        condition: any
+        delay: 5s
+        max_attempts: 3
+        window: 120s
+
+networks:
+  traefik-net:
+    external: true

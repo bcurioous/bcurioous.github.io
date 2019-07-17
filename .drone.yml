@@ -1,0 +1,51 @@
+pipeline:
+  frontend:
+    image: node
+    commands:
+      - npm install
+      - npm run build
+
+  build:
+    image: docker
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
+    environment:
+      - REGISTRY_SERVER=registry.gitlab.com/totalo/jameschristian-resume
+      - REGISTRY_USERNAME=totalo
+      - REGISTRY_PASSWORD=totalo8990@James
+      - REPOSITORY_NAME=jameschristian-resume
+      - REPO_TAG_VERSION=1.0.0
+    commands:
+      - docker build -t $${REGISTRY_SERVER}/$${REPOSITORY_NAME}:latest -t $${REGISTRY_SERVER}/$${REPOSITORY_NAME}:$${REPO_TAG_VERSION} . --compress=true
+
+  publish:
+    image: plugins/docker
+    registry: registry.gitlab.com/totalo
+    username: totalo
+    password: totalo8990@James
+    repo: registry.gitlab.com/totalo/jameschristian-resume
+    tags:
+      - latest
+      - 1.0.0
+
+  run:
+    image: docker
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
+    environment:
+      - REGISTRY_SERVER=registry.gitlab.com
+      - REGISTRY_USERNAME=totalo
+      - REGISTRY_PASSWORD=totalo8990@James
+      - DOCKER_STACK=totalo
+      - REPOSITORY_IMAGE_NAME=registry.gitlab.com/totalo/jameschristian-resume:latest
+    commands:
+      - docker login -u $${REGISTRY_USERNAME} -p $${REGISTRY_PASSWORD} $${REGISTRY_SERVER}
+      - docker stack deploy -c ./docker-compose.yml --with-registry-auth $${DOCKER_STACK}
+  slack:
+    image: plugins/slack
+    webhook: https://hooks.slack.com/services/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
+    channel: builds
+    username: resume.totalo.in
+    icon_url: https://cdn-images-1.medium.com/max/800/1*N7vcpmENqVHTLhgjbrbsFg.jpeg
+    when:
+      status: [ success, failure ]

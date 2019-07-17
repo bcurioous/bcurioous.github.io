@@ -1,0 +1,22 @@
+{
+  "name": "james-resume",
+  "version": "1.0.15",
+  "private": true,
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-ga": "^2.3.5",
+    "react-simple-chatbot": "^0.3.7",
+    "styled-components": "^3.4.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "custom-react-scripts": "^0.2.2"
+  }
+}

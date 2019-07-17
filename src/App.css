@@ -1,0 +1,15 @@
+.address span {
+  display: block;
+}
+
+.pair dt {
+  color: inherit;
+  float: left;
+  clear: left;
+  width: 6em;
+  font-weight: bold;
+}
+
+.pair dd {
+  float: left;
+} 
